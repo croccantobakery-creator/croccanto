@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Croccanto Bakery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 150px; /* 🔥 logo grande */
+    object-fit: contain;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7b1e1e;
+    font-weight: 500;
+}
+
+/* REDES */
+.redes {
+    display: flex;
+    gap: 15px;
+}
+
+.redes a {
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+.fa-whatsapp { color: #25D366; }
+.fa-instagram { color: #E1306C; }
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://assets.bonappetit.com/photos/68e6b4a316c63f9625380e02/1:1/w_1920,c_limit/1025_Dominique-Ansel-RECIPE.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero h1 {
+    font-size: 50px;
+}
+
+.btn {
+    margin-top: 20px;
+    background: #7b1e1e;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* SECCIONES */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background: #7b1e1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <!-- 🔥 SI RENOMBRAS, CAMBIA A logo.png -->
+        <img src="logo.png.png" alt="Croccanto Logo">
+    </div>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+
+        <!-- REDES -->
+        <div class="redes">
+            <a href="https://wa.me/573132122808" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/croccantobakery" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hojaldres que enamoran</h1>
+    <p>Experiencia artesanal en cada bocado</p>
+    <a class="whatsapp" href="https://wa.me/573132122808" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="28">
+</a>
+</section>
+
+<section id="servicios" class="section">
+    <h2>¿Qué ofrecemos?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🥐 Hojaldres Premium</h3>
+            <p>Especialidad de la casa</p>
+        </div>
+        <div class="card">
+            <h3>☕ Café</h3>
+            <p>El mejor acompañante</p>
+        </div>
+        <div class="card">
+            <h3>🍔 Croccburguer</h3>
+            <p>Tu producto estrella</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <p>📍 Villavicencio - Barzal</p>
+    <p>📱 313 212 2808</p>
+    <p>📸 @croccantobakery</p>
+</section>
+
+<footer>
+    <p>© 2026 Croccanto Bakery</p>
+</footer>
+
+</a>
+
+</body>
+</html>
