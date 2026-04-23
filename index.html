@@ -6,8 +6,6 @@
 <title>Croccanto Bakery</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- ICONOS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -30,15 +28,8 @@ header {
     border-bottom: 1px solid #eee;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
 .logo img {
-    height: 150px; /* 🔥 logo grande */
-    object-fit: contain;
+    height: 150px;
 }
 
 /* NAV */
@@ -61,7 +52,7 @@ nav a {
 }
 
 .redes a {
-    font-size: 40px;
+    font-size: 30px;
     transition: 0.3s;
 }
 
@@ -82,12 +73,13 @@ nav a {
     color: white;
 
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url(https://assets.bonappetit.com/photos/68e6b4a316c63f9625380e02/1:1/w_1920,c_limit/1025_Dominique-Ansel-RECIPE.jpg);
+    url('https://assets.bonappetit.com/photos/68e6b4a316c63f9625380e02/1:1/w_1920,c_limit/1025_Dominique-Ansel-RECIPE.jpg');
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .hero h1 {
     font-size: 50px;
 }
@@ -121,6 +113,20 @@ nav a {
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
 
+/* 🔥 SECCIÓN FINAL IMAGEN */
+.final-img {
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+    background: #f8f8f8;
+}
+
+.final-img img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
 /* FOOTER */
 footer {
     background: #7b1e1e;
@@ -128,28 +134,13 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
-/* WHATSAPP FLOTANTE */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 </style>
-
 </head>
 
 <body>
 
 <header>
     <div class="logo">
-        <!-- 🔥 SI RENOMBRAS, CAMBIA A logo.png -->
         <img src="logo.png.png" alt="Croccanto Logo">
     </div>
 
@@ -158,24 +149,23 @@ footer {
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
 
-        <!-- REDES -->
         <div class="redes">
             <a href="https://wa.me/573132122808" target="_blank">
-                <i class="fab fa-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp"></i>
             </a>
             <a href="https://instagram.com/croccantobakery" target="_blank">
-                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Hojaldres que enamoran</h1>
-    <p>Experiencia artesanal en cada bocado</p>
-    <a class="whatsapp" href="https://wa.me/573132122808" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="28">
-</a>
+    <div>
+        <h1>Hojaldres que enamoran</h1>
+        <p>Experiencia artesanal en cada bocado</p>
+        <a class="btn" href="https://wa.me/573132122808">Pedir ahora</a>
+    </div>
 </section>
 
 <section id="servicios" class="section">
@@ -203,11 +193,14 @@ footer {
     <p>📸 @croccantobakery</p>
 </section>
 
+<!-- 🔥 IMAGEN FINAL A LA DERECHA -->
+<section class="final-img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahxYewgzywfTGZtErakBEa0rYYvQo-_Xhqw&s" alt="Croissant">
+</section>
+
 <footer>
     <p>© 2026 Croccanto Bakery</p>
 </footer>
-
-</a>
 
 </body>
 </html>
